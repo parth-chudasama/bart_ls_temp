@@ -439,8 +439,8 @@ class SummarizationTask(FairseqTask):
         self.tgt_dict = tgt_dict
 
         bpe_cfg = GPT2BPEConfig(
-            gpt2_encoder_json='/datasets01/bookwiki_CC-NEWS_openwebtext_stories-mmap2-bin/121219/bookwiki_CC-NEWS_openwebtext_stories-mmap2-bin/encoder.json',
-            gpt2_vocab_bpe='/datasets01/bookwiki_CC-NEWS_openwebtext_stories-mmap2-bin/121219/bookwiki_CC-NEWS_openwebtext_stories-mmap2-bin/vocab.bpe'
+            gpt2_encoder_json='../../gpt2_bpe/encoder.json',
+            gpt2_vocab_bpe='../../gpt2_bpe/vocab.bpe'
         )
         self.bpe = GPT2BPE(bpe_cfg)
 
