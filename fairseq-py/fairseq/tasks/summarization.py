@@ -439,8 +439,8 @@ class SummarizationTask(FairseqTask):
         self.tgt_dict = tgt_dict
 
         bpe_cfg = GPT2BPEConfig(
-            gpt2_encoder_json='../../gpt2_bpe/encoder.json',
-            gpt2_vocab_bpe='../../gpt2_bpe/vocab.bpe'
+            gpt2_encoder_json='/kaggle/working/bart_ls/fairseq-py/gpt2_bpe/encoder.json',
+            gpt2_vocab_bpe='/kaggle/working/bart_ls/fairseq-py/gpt2_bpe/vocab.bpe'
         )
         self.bpe = GPT2BPE(bpe_cfg)
 
